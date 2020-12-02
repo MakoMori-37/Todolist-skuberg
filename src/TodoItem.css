@@ -1,0 +1,131 @@
+.todoitem{
+    
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    background-image: radial-gradient( circle 993px at 0.5% 50.5%,  rgba(137,171,245,0.37) 0%, rgba(245,247,252,1) 100.2% );
+    padding: 0 15px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.todo__ts{
+    width: 80%;  
+    word-break: break-all;
+}
+
+.todo__ts > p{
+    font-size: 20px;
+    padding: 12px 20px;
+    
+}
+
+.close__but{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    margin: 0 12px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.close__but:hover{
+    background-color: #dfe3ee;
+    color: red;
+
+}
+
+.close__but > .MuiSvgIcon-root{
+    font-size: 16px;
+}
+
+
+.jobdone{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.jobdone:hover{
+    background-color: #dfe3ee;
+    color: green;
+}
+
+.jobdone > .MuiSvgIcon-root{
+    font-size: 16px;
+}
+
+.todo__but{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.todoitemcomplete{
+    position: relative;
+    color:#dfe3ee;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    z-index: 999;
+    display: flex;
+    color: black;
+    padding: 0 15px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: space-between;
+    background-image: linear-gradient( 110.1deg,  rgba(34,126,34,1) 2.9%, rgba(168,251,60,1) 90.3% );
+}
+
+.todoitemcomplete .jobdone{
+    opacity: 0;
+}
+
+.todoitemcomplete .bench{
+    opacity: 1;
+}
+
+.bench{
+    position: absolute;
+    top: 0;
+    left: -4px;
+    
+    opacity: 0;    
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(231, 226, 226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    border: 1px solid rgb(151, 155, 151);
+}
+
+
+.bench > .MuiSvgIcon-root{
+    font-size: 20px;
+}
+

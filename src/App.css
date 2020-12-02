@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mali', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-size: cover;
+  background-image: url('https://images.unsplash.com/photo-1605580556856-db8fae94b658?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2MHxibzhqUUtUYUUwWXx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+}
+
+.app__container {
+  height: 560px;
+  width: 480px;
+  border-radius: 8px;
+
+  background-color: #3b5998;
+}
+
+.app__container > h1 {
+  display: flex;
+  justify-content: center;
+  color: #dfe3ee;
+  margin-top: 4%;
+}
+
+.input__f{
+  height: 36px;
+  width: 82%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #dfe3ee;
+  margin-top: 4%;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.input__f :focus{
+  outline: none;
+}
+
+.input__f > .MuiSvgIcon-root{
+  color: rgb(68, 67, 67);
+  margin: 0px 10px;
+ 
+}
+
+.input__f > input{
+  border: none;
+  width: 70%;
+  height: 25px;
+  background-color: transparent;
+}
+
+.add__button{
+  height: 100%;
+  width: 30%;
+  background-color: #007FFF;
+  border-radius: 999px;
   color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.add__button:disabled{
+  background-color: #b8bbc4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item__container{
+  width: 100%;
+  height: 400px;
+  margin-top: 6%;
+  overflow-y:scroll;
+  margin-bottom: 15px;
 }
+
